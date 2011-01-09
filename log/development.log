@@ -297,3 +297,37 @@ Processing PostsController#show (for 127.0.0.1 at 2010-10-17 20:25:22) [GET]
 Rendering template within layouts/posts
 Rendering posts/show
 Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00600 (35%) | DB: 0.00000 (0%) | 200 OK [http://localhost/posts/1]
+
+
+Processing InfoController#properties (for 127.0.0.1 at 2011-01-09 13:16:55) [GET]
+  Session ID: 2038e89031afeddd407e12da7720b01d
+  Parameters: {"action"=>"properties", "controller"=>"rails/info"}
+  [4;36;1mSQL (0.001000)[0m   [0;1mSELECT version FROM schema_info[0m
+Completed in 0.06600 (15 reqs/sec) | Rendering: 0.00100 (1%) | DB: 0.00100 (1%) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mPRAGMA index_list(posts)[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2011-01-09 13:44:30) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6a4b4e3fd959af50365ef9431d753d07f328bbc8
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.000000)[0m   [0;1mSELECT * FROM posts [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 0.02100 (47 reqs/sec) | Rendering: 0.01300 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2011-01-09 13:44:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzcyMzY1MzRmMWFhNTQ5YjRhNDA1YTg1Zjg5MzQ5%0ANDciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--e192722a0fdae792f5e6c059f569b3b76fc0afd7
+  Parameters: {"action"=>"new", "controller"=>"posts"}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00700 (43%) | DB: 0.00000 (0%) | 200 OK [http://localhost/posts/new]

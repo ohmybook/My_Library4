@@ -1,0 +1,5 @@
+TestDocument 在 My_Library4的doc\目录下
+可执行文件 HappyReading.rar在 My_Library4的~Release\目录下
+源代码 test.rar在 My_Library4的~SourceCode\目录下
+单元测试代码 unittest在 My_Library4的test\unit\unittest\的目录下
+bug_tracker 在My_Library4的doc\目录下
